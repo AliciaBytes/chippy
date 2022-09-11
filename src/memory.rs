@@ -17,6 +17,8 @@ const FONT_DATA: [u8; 80] = [
     0xF0, 0x80, 0xF0, 0x80, 0x80, // F
 ];
 
+/// Allocate a vector with 4096 bytes as ram for the emulator.
+/// The font data is already written to the memory range 0x50 to 0x9F.
 pub fn allocate_memory() -> Vec<u8> {
     let mut memory = vec![0u8; 4096];
 
@@ -25,6 +27,7 @@ pub fn allocate_memory() -> Vec<u8> {
     memory
 }
 
+/// Write the standard font data to a memory range.
 fn write_font_to_memory(memory: &mut [u8]) {
     if memory.len() != FONT_DATA.len() {
         panic!(
