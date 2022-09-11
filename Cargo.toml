@@ -1,0 +1,17 @@
+[package]
+name = "chippy"
+version = "0.0.0"
+edition = "2021"
+license = "MIT OR Unlicense"
+authors = ["Alicia Miedl <alicia@aliciabytes.com>"]
+rust-version = "1.56"
+readme = "README.md"
+homepage = "https://github.com/AliciaBytes/chippy"
+repository = "https://github.com/AliciaBytes/chippy"
+keywords = ["chip-8, emulator, chip8"]
+categories = []
+publish = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
